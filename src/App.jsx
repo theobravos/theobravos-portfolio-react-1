@@ -1,4 +1,4 @@
-// src/App.jsx
+// src/App.js
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "./components/Navbar";
@@ -6,18 +6,17 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import "./index.css"; // global CSS
 
-export default function App() {
+function App() {
   return (
     <div className="App">
       <Navbar />
 
-      {/* Wrap all sections in AnimatePresence for page-level transitions */}
       <AnimatePresence exitBeforeEnter>
-        {/* Each section is a motion.div that can slide/fade */}
         <motion.section
-          key="hero"
           id="hero"
+          key="hero"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
@@ -27,8 +26,8 @@ export default function App() {
         </motion.section>
 
         <motion.section
-          key="projects"
           id="projects"
+          key="projects"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
@@ -38,8 +37,8 @@ export default function App() {
         </motion.section>
 
         <motion.section
-          key="skills"
           id="skills"
+          key="skills"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
@@ -49,8 +48,8 @@ export default function App() {
         </motion.section>
 
         <motion.section
-          key="contact"
           id="contact"
+          key="contact"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -50 }}
@@ -62,3 +61,5 @@ export default function App() {
     </div>
   );
 }
+
+export default App;

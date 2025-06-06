@@ -1,0 +1,18 @@
+/* src/components/Skills.css */
+.section-container {
+    max-width: 960px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+  }
+  .skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+  }
+  .skills-list li {
+    background: #e9ecef;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }

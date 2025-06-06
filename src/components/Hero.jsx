@@ -3,13 +3,14 @@ import React, { useRef, useEffect } from "react";
 import * as THREE from "three";
 import Typed from "typed.js";
 import { debounce } from "lodash";
+import "./Hero.css"; // we’ll add styling next
 
 export default function Hero() {
   const mountRef = useRef(null);
   const typedRef = useRef(null);
 
   useEffect(() => {
-    // ========== THREE.JS SETUP ==========
+    // ====== THREE.JS SETUP ======
     const mount = mountRef.current;
     const width = mount.clientWidth;
     const height = mount.clientHeight;
@@ -22,7 +23,7 @@ export default function Hero() {
     renderer.setSize(width, height);
     mount.appendChild(renderer.domElement);
 
-    // Particle geometry
+    // Create particle cloud
     const particlesCount = 1500;
     const positions = new Float32Array(particlesCount * 3);
     for (let i = 0; i < particlesCount * 3; i++) {
@@ -50,17 +51,17 @@ export default function Hero() {
     };
     animate();
 
-    // ========== TYPED.JS SETUP ==========
+    // ====== TYPED.JS SETUP ======
     const options = {
       strings: [
         "Hi, I'm Theo Bravos.",
         "Master’s candidate in Business Analytics.",
-        "I build 3D data visualizations and interactive dashboards."
+        "I build 3D data visualizations & interactive dashboards.",
       ],
       typeSpeed: 50,
       backSpeed: 30,
       backDelay: 1500,
-      loop: true
+      loop: true,
     };
     const typed = new Typed(typedRef.current, options);
 
@@ -73,26 +74,8 @@ export default function Hero() {
   }, []);
 
   return (
-    <div
-      ref={mountRef}
-      style={{
-        position: "relative",
-        width: "100%",
-        height: "100vh",
-        background: "#0b0c10"
-      }}
-    >
-      <div
-        style={{
-          position: "absolute",
-          top: "45%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-          color: "#66fcf1",
-          fontSize: "2rem",
-          textAlign: "center"
-        }}
-      >
+    <div className="hero-container" ref={mountRef}>
+      <div className="typed-overlay">
         <span ref={typedRef}></span>
       </div>
     </div>

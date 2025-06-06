@@ -1,0 +1,36 @@
+/* src/components/Navbar.css */
+header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-links li {
+    cursor: pointer;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+  }
+  .nav-links a:hover {
+    color: #0070f3;
+  }
