@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/theobravos-portfolio-react-1/static/css/main.ed1e1c57.css",
-    "main.js": "/theobravos-portfolio-react-1/static/js/main.c76ad601.js",
+    "main.js": "/theobravos-portfolio-react-1/static/js/main.24945bae.js",
     "static/js/453.2e124911.chunk.js": "/theobravos-portfolio-react-1/static/js/453.2e124911.chunk.js",
     "index.html": "/theobravos-portfolio-react-1/index.html",
     "main.ed1e1c57.css.map": "/theobravos-portfolio-react-1/static/css/main.ed1e1c57.css.map",
-    "main.c76ad601.js.map": "/theobravos-portfolio-react-1/static/js/main.c76ad601.js.map",
+    "main.24945bae.js.map": "/theobravos-portfolio-react-1/static/js/main.24945bae.js.map",
     "453.2e124911.chunk.js.map": "/theobravos-portfolio-react-1/static/js/453.2e124911.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed1e1c57.css",
-    "static/js/main.c76ad601.js"
+    "static/js/main.24945bae.js"
   ]
 }
