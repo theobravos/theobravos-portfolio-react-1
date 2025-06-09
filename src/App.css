@@ -1,11 +1,10 @@
 /* index.css */
 body {
+  font-family: "Press Start 2P", sans-serif;
+  background: #2E7D32; /* green turf */
+  color: #FFF;
   margin: 0;
   padding: 0;
-  font-family: "Inter", sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f8f9fa;
 }
 
 header {

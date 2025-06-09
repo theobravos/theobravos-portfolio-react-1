@@ -3,15 +3,20 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background: #0b0c10;
+    background-color: #2E7D32;
+    background-image:
+      linear-gradient(white 2px, transparent 2px),
+      linear-gradient(90deg, white 2px, transparent 2px);
+    background-size: 100% 10%, 10% 100%; /* yard lines every 10% */
   }
-  .typed-overlay {
+  
+  /* Optional overlay text */
+  .hero-text {
     position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #66fcf1;
-    font-size: 2rem;
+    bottom: 20%;
+    width: 100%;
     text-align: center;
-    pointer-events: none;
+    font-size: 2rem;
+    color: #FFF;
+    text-shadow: 1px 1px 0 #000;
   }
